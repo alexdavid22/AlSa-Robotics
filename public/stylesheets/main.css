@@ -1,0 +1,93 @@
+/*hero banner ///////////////////*/
+
+.hero {
+  position: relative;
+  background-image: url("../images/AlSaRobotics.png");
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    height: 400px; /* Redimensionați înălțimea bannerului pentru ecrane mai mici */
+  }
+}
+
+/* rock paper scisors ///////////////// */
+
+.rock-paper-scissors {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.pick-move-rainbow {
+  font-size: 35px;
+  color: white;
+  padding: 10px;
+  animation: changeColor 4s linear infinite;
+}
+
+/* Define the keyframes animation */
+@keyframes changeColor {
+  0% {
+    background-color: #3498db; /* Initial background color */
+  }
+  25% {
+    background-color: #e74c3c; /* First color change */
+  }
+  50% {
+    background-color: #2ecc71; /* Second color change */
+  }
+  75% {
+    background-color: #f39c12; /* Third color change */
+  }
+  100% {
+    background-color: #3498db; /* Back to the initial background color */
+  }
+}
+
+.game-buttons button {
+  padding: 10px 15px;
+  font-size: 1.5em;
+  margin-right: 15px;
+}
+
+.buttons-result p {
+  margin: 10px 0px;
+}
+
+/* the api program ///////////////// */
+
+.activity-api {
+  border: 3px solid rgb(26, 138, 207);
+}
+
+.activity-api h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.activity-api p.inline {
+  font-size: 22px;
+  text-align: center;
+  font-family: "Black Ops One", cursive;
+}
+
+.activity-api p.button {
+  border: 3px dashed yellow;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 46.5%;
+  padding: 5px 10px;
+  margin-top: 10px;
+  background-color: rgb(52, 73, 130);
+  font-weight: bold;
+}
+
+.activity-api .show-activity {
+  margin-top: 30px;
+  font-size: 30px;
+}

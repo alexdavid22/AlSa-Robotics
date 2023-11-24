@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formular de inregistrare</title>
+    <link rel="stylesheet" href="/stylesheets/register.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <h2>Register Form</h2>
+      <form method="post" action="/register" class="main-form">
+        <% if (typeof errorMsg !== 'undefined') { %>
+        <div class="error-message"><%= errorMsg %></div>
+        <% } %>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="confirm-password">Confirm the desired password:</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirmPassword"
+          required
+        />
+        <input type="submit" value="Register" />
+        <a href="/login">Log in</a>
+      </form>
+    </div>
+  </body>
+</html>

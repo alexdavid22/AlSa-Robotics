@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formular de logare</title>
+    <link rel="stylesheet" href="/stylesheets/login.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form method="POST" action="/login">
+      <% if (typeof errorMsg !== 'undefined') { %>
+      <div class="error-message"><%= errorMsg %></div>
+      <% } %>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+      /><br /><br />
+
+      <input type="submit" value="Login" />
+      <a href="/register">Register</a>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlSaRobotics</title>
+    <link rel="stylesheet" href="/stylesheets/header.css" />
+    <link rel="stylesheet" href="/stylesheets/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="home">
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">AlSaRobotics</label>
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCzZa7KoiEzwCYnC4QpPheyw"
+              target="_blank"
+              >Youtube</a
+            >
+          </li>
+          <li>
+            <form method="POST" action="/logout">
+              <button type="submit">Logout</button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero"></div>
+
+      <div class="rock-paper-scissors">
+        <h1>Rock Papper Scissors game with my first algorithm</h1>
+        <p class="pick-move-rainbow">Pick your move &rarr;</p>
+        <div class="game-buttons">
+          <button onclick="playGame('rock')">Rock</button>
+          <button onclick="playGame('paper')">Paper</button>
+          <button onclick="playGame('scissors')">Scissors</button>
+          <button onclick="resetScore()">Reset Score</button>
+        </div>
+        <div class="buttons-result">
+          <p class="moves"></p>
+          <p class="result"></p>
+          <p class="score"></p>
+        </div>
+      </div>
+
+      <div class="activity-api">
+        <h1>My first api program!</h1>
+        <p class="inline">
+          This program is the clasical get activity api, where you will get a
+          random activity recomandation every time you choose to press the
+        </p>
+        <p class="button inline activity">button</p>
+
+        <p class="show-activity">What could I do?</p>
+      </div>
+
+      <div class="Avada"></div>
+    </main>
+
+    <script src="/javascripts/index.js"></script>
+  </body>
+</html>
